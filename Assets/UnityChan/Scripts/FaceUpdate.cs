@@ -25,6 +25,7 @@ namespace UnityChan
                 GUILayout.BeginArea(screenRect);
                 foreach (var animation in animations)
                 {
+					Debug.Log(animation.name);
                     if (GUILayout.RepeatButton(animation.name))
                     {
                         anim.CrossFade(animation.name, 0);
@@ -35,19 +36,17 @@ namespace UnityChan
             }
 		}
 
-		float current = 0;
+		// float current = 0;
+		// void Update ()
+		// {
 
-		void Update ()
-		{
-
-			if (Input.GetMouseButton (0)) {
-				current = 1;
-			} else if (!isKeepFace) {
-				current = Mathf.Lerp (current, 0, delayWeight);
-			}
-			anim.SetLayerWeight (1, current);
-		}
-	 
+		// 	if (Input.GetMouseButton (0)) {
+		// 		current = 1;
+		// 	} else if (!isKeepFace) {
+		// 		current = Mathf.Lerp (current, 0, delayWeight);
+		// 	}
+		// 	anim.SetLayerWeight (1, current);
+		// }
 
 		//アニメーションEvents側につける表情切り替え用イベントコール
 		public void OnCallChangeFace (string str)
@@ -70,8 +69,8 @@ namespace UnityChan
 		void ChangeFace (string str)
 		{
 			isKeepFace = true;
-			current = 1;
-			anim.CrossFade (str, 0);
+			// current = 1;
+			// anim.CrossFade (str, 0);
 		}
 	}
 }
