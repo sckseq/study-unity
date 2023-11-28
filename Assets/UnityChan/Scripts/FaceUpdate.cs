@@ -25,7 +25,6 @@ namespace UnityChan
                 GUILayout.BeginArea(screenRect);
                 foreach (var animation in animations)
                 {
-					Debug.Log(animation.name);
                     if (GUILayout.RepeatButton(animation.name))
                     {
                         anim.CrossFade(animation.name, 0);
