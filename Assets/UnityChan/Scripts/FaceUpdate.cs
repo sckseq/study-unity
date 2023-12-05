@@ -49,7 +49,7 @@ namespace UnityChan
 
 		//アニメーションEvents側につける表情切り替え用イベントコール
 		public void OnCallChangeFace (string str)
-		{   
+		{
 			int ichecked = 0;
 			foreach (var animation in animations) {
 				if (str == animation.name) {
