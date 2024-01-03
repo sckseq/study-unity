@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -500,27 +500,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: hiyoco_nomal_full_18
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 27
-        width: 31
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d1cc0dfe8a6e7849a1d13aa1b4e4d48
-      internalID: 1512481640
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -542,7 +521,6 @@ TextureImporter:
       hiyoco_nomal_full_15: 1967699461
       hiyoco_nomal_full_16: 1619396368
       hiyoco_nomal_full_17: 1936249218
-      hiyoco_nomal_full_18: 1512481640
       hiyoco_nomal_full_2: 810746310
       hiyoco_nomal_full_3: -458664657
       hiyoco_nomal_full_4: -1349636305
